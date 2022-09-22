@@ -1,20 +1,20 @@
 # Team Management Application
 simple applications that allow coaches to manage their sport team
 
-##Technologies
+## Technologies
 Java
 Maven
 Spring
 Docker
 MySQL
 
-##Features
+## Features
 CREATE new player
 READ existing players
 UPDATE existing players
 DELETE existing player
 
-##Upcoming Features
+## Upcoming Features
 Login System with spring security
 Add player statistics
 Add assistant coach feature

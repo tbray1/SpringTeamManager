@@ -1,31 +1,30 @@
-package com.sringboot.employeemanager.model;
+package com.springboot.teammanager.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
     @Entity
-    public class Employee implements Serializable {
+    public class Player implements Serializable {
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
         @Column(nullable = false, updatable = false)
         private Long id;
         private String name;
         private String email;
-        private String jobTitle;
+        private String position;
         private String phone;
         private String imageUrl;
-        @Column(nullable = false, updatable = false)
-        private String employeeCode;
+        private String jerseyNumber;
 
-        public Employee() {}
+        public Player() {}
 
-        public Employee(String name, String email, String jobTitle, String phone, String imageUrl, String employeeCode) {
+        public Player(String name, String email, String position, String phone, String imageUrl, String jerseyNumber) {
             this.name = name;
             this.email = email;
-            this.jobTitle = jobTitle;
+            this.position = position;
             this.phone = phone;
             this.imageUrl = imageUrl;
-            this.employeeCode = employeeCode;
+            this.jerseyNumber = jerseyNumber;
         }
 
         public Long getId() {
@@ -52,12 +51,12 @@ import java.io.Serializable;
             this.email = email;
         }
 
-        public String getJobTitle() {
-            return jobTitle;
+        public String setPosition() {
+            return position;
         }
 
-        public void setJobTitle(String jobTitle) {
-            this.jobTitle = jobTitle;
+        public void setPosition(String position) {
+            this.position = position;
         }
 
         public String getPhone() {
@@ -76,21 +75,21 @@ import java.io.Serializable;
             this.imageUrl = imageUrl;
         }
 
-        public String getEmployeeCode() {
-            return employeeCode;
+        public String getJerseyNumber() {
+            return jerseyNumber;
         }
 
-        public void setEmployeeCode(String employeeCode) {
-            this.employeeCode = employeeCode;
+        public void setJerseyNumber(String jerseyNumber) {
+            this.jerseyNumber = jerseyNumber;
         }
 
         @Override
         public String toString() {
-            return "Employee{" +
+            return "Player{" +
                     "id=" + id +
                     ", name='" + name + '\'' +
                     ", email='" + email + '\'' +
-                    ", jobTitle='" + jobTitle + '\'' +
+                    ", position='" + position + '\'' +
                     ", phone='" + phone + '\'' +
                     ", imageUrl='" + imageUrl + '\'' +
                     '}';

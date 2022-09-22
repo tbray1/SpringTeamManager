@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sringboot</groupId>
-	<artifactId>employeemanager</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>employeemanager</name>
-	<description>Employee Manger App</description>
+	<artifactId>teammanager</artifactId>
+	<version>0.0.1</version>
+	<name>teammanager</name>
+	<description>Team Manger App</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

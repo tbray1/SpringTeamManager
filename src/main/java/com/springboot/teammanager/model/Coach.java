@@ -1,10 +1,10 @@
-package com.sringboot.employeemanager.model;
+package com.springboot.teammanager.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-public class Manager implements Serializable {
+public class Coach implements Serializable {
     @Id
 @GeneratedValue(strategy = GenerationType.AUTO)
 @Column(nullable = false, updatable = false)
